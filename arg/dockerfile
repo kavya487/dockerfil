@@ -1,5 +1,5 @@
 from almalinux:9
 env duration="120hrs"
-arg user=kavya
-run echo "hello  user ${user}"
+arg USERNAME=kavya
+run echo "hello  user ${USERNAME}"
 cmd ["sleep", "100"]
