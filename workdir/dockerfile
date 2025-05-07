@@ -1,3 +1,4 @@
 from almalinux:9
 run mkdir /tmp/kavya
+run echo "hi am in this directory" > kavs.txt
 cmd ["sleep", "100"]
