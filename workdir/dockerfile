@@ -1,6 +1,6 @@
 from almalinux:9
 run mkdir /tmp/kavya
-run cd /tmp/kavya
+workdir  /tmp/kavya
 run pwd 
 run echo "hi am in this directory" > kavs.txt
 cmd ["sleep", "100"]
