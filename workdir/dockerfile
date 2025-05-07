@@ -1,2 +1,3 @@
 from almalinux:9
 run mkdir /tmp/kavya
+cmd ["sleep", "100"]
