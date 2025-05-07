@@ -1,0 +1,4 @@
+from almalinux:9
+env duration="120hrs"
+run echo "hello ${duration}" > /tmp/hello.txt
+cmd ["sleep", "100"]
