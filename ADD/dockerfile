@@ -2,5 +2,6 @@ FROM almalinux:9
 RUN dnf install nginx -y
 RUN rm -rf /usr/share/ nginx/html/index.html
 ADD https://raw.githubusercontent.com/kavya487/dockerfil/refs/heads/main/run/dockerfile /usr/share/nginx/html/index.html
-# COPY index.html /usr/share/nginx/html/index.html
+ADD chmod +r /usr/share/nginx/html/index.html
+ADD sample1.tar   /tmp/
 CMD ["nginx", "-g", "daemon off;"]
