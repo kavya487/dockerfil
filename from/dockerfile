@@ -1,3 +1,4 @@
 FROM almalinux:9
 RUN dnf install -y iputils && dnf clean all
-ENTRYPOINT  ["ping",  "facebook.com"]
+cmd ["facebook.com"]
+ENTRYPOINT  ["ping"]
